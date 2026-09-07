@@ -20,6 +20,23 @@ yerel bir veritabanında saklanır. Bulut sunucusuna veri gönderilmez.</p>
 <p>Hesap bağlantısı panelden kaldırıldığında erişim anahtarları silinir; ayrıca ilgili
 platformun ayarlarından uygulama izni her zaman iptal edilebilir. Tüm yerel veri,
 panelin veri klasörü silinerek kalıcı olarak yok edilebilir.</p>
+
+<h2>YouTube API Servisleri</h2>
+<p>PipeLine Social, <b>YouTube API Servisleri</b>'ni kullanır. Uygulamayı kullanarak
+<a href="https://www.youtube.com/t/terms">YouTube Hizmet Şartları</a>'nı kabul etmiş
+olursunuz. Google'ın verileri nasıl işlediği için
+<a href="http://www.google.com/policies/privacy">Google Gizlilik Politikası</a>'na bakın.</p>
+<p><b>Erişilen veriler:</b> yalnızca bağlı kanalın adı ve kimliği (<code>youtube.readonly</code>)
+ve kullanıcının kendi videolarının yüklenmesi (<code>youtube.upload</code>). Başka hiçbir
+kanalın verisine erişilmez, izlenme/abone verisi toplanmaz.</p>
+<p><b>Saklama:</b> YouTube'dan alınan tek kalıcı veri, şifrelenmiş OAuth yenileme
+anahtarı ile kanal adı/kimliğidir; ikisi de yalnızca kullanıcının kendi bilgisayarındaki
+yerel veritabanında tutulur ve hiçbir yere gönderilmez.</p>
+<p><b>Erişimi iptal etme:</b> Google hesabınızın izin sayfasından uygulamanın erişimini
+her zaman kaldırabilirsiniz:
+<a href="https://myaccount.google.com/permissions">https://myaccount.google.com/permissions</a>.
+İptal ettiğinizde saklanan anahtar geçersiz olur; panelden hesabı kaldırmak da anahtarı
+yerel veritabanından siler.</p>
 <div class="en">
 <p><b>English summary:</b> PipeLine Social stores OAuth tokens (encrypted), uploaded videos and
 scheduling data locally on the owner's own computer only. Data is transmitted solely to the
@@ -27,6 +44,16 @@ official APIs of the connected platforms when publishing. No data is shared with
 or processed by any third party. Removing a connected account deletes its tokens, and app
 access can be revoked at any time from the platform's settings; all local data can be
 permanently deleted by removing the panel's data folder.</p>
+<p><b>YouTube API Services:</b> PipeLine Social uses YouTube API Services. By using it you
+agree to the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>; see the
+<a href="http://www.google.com/policies/privacy">Google Privacy Policy</a> for how Google
+handles data. The only YouTube data accessed is the connected channel's name and ID
+(<code>youtube.readonly</code>) and the upload of the user's own videos
+(<code>youtube.upload</code>). No other channel's data is accessed and no analytics are
+collected. The only YouTube data stored is the encrypted OAuth refresh token and the channel
+name/ID, kept in a local database on the user's own computer. Access can be revoked at any
+time at <a href="https://myaccount.google.com/permissions">https://myaccount.google.com/permissions</a>,
+and removing the account in the panel deletes the stored token.</p>
 </div>
 <p><small>Son güncelleme / Last updated: 1 Eylül 2026</small></p>
 </body></html>
